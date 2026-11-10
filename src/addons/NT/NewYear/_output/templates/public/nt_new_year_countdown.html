@@ -1,0 +1,17 @@
+<xf:if is="$xf.ntNewYear.visible && $xf.options.ntNewYearCountdown">
+	<xf:css src="nt_new_year.less" />
+	<xf:js src="nt/new_year.js" />
+
+	<div class="ntNewYear-countdownGroup" role="timer" hidden
+		data-xf-init="nt-new-year-countdown"
+		data-days="{{ phrase('nt_new_year_countdown_days')|for_attr }}"
+		data-done="{{ phrase('nt_new_year_happy_new_year')|for_attr }}"
+		aria-label="{{ phrase('nt_new_year_countdown_label')|for_attr }}">
+		<span class="ntNewYear-countdown">
+			<xf:fa icon="fa-snowflake" />
+			<span class="ntNewYear-countdownLabel">{{ phrase('nt_new_year_countdown_label') }}</span>
+			<span class="ntNewYear-countdownDays js-ntNewYearCountdownDays"></span>
+			<span class="ntNewYear-countdownClock js-ntNewYearCountdownClock"></span>
+		</span>
+	</div>
+</xf:if>

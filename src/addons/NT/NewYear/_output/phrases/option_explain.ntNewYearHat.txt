@@ -1,0 +1,1 @@
+Size and position are set in the style properties, group "[nt] New Year decorations".

@@ -1,0 +1,17 @@
+{
+    "group_name": "ntNewYear",
+    "title": "Snowflake color",
+    "description": "",
+    "property_type": "value",
+    "css_components": [],
+    "value_type": "color",
+    "value_parameters": "",
+    "has_variations": true,
+    "depends_on": "",
+    "value_group": "",
+    "property_value": {
+        "default": "#9fb6ce",
+        "alternate": "#ffffff"
+    },
+    "display_order": 10
+}

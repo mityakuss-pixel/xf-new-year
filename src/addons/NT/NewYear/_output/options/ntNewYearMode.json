@@ -1,0 +1,13 @@
+{
+    "edit_format": "radio",
+    "edit_format_params": "dates={{ phrase('nt_new_year_mode_dates') }}\non={{ phrase('nt_new_year_mode_on') }}\noff={{ phrase('nt_new_year_mode_off') }}",
+    "data_type": "string",
+    "sub_options": [],
+    "validation_class": "",
+    "validation_method": "",
+    "advanced": false,
+    "default_value": "dates",
+    "relations": {
+        "ntNewYear": 10
+    }
+}

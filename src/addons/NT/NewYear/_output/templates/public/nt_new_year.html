@@ -1,0 +1,20 @@
+<xf:if is="$xf.ntNewYear.visible">
+	<xf:css src="nt_new_year.less" />
+	<xf:if is="$xf.options.ntNewYearHat">
+		<xf:css src="nt_new_year_hat.less" />
+	</xf:if>
+
+	<xf:if is="$xf.options.ntNewYearSnowCount || $xf.options.ntNewYearSnowCaps">
+		<xf:js src="nt/new_year.js" />
+
+		<div class="ntNewYear" aria-hidden="true"
+			data-xf-init="nt-new-year"
+			data-snow-count="{$xf.options.ntNewYearSnowCount}"
+			data-caps="{{ $xf.options.ntNewYearSnowCaps ? 'true' : 'false' }}"
+			data-cap-targets=".block--category .block-container, .p-body-sidebar .block-container, .button--cta">
+			<xf:if is="$xf.options.ntNewYearSnowCount">
+				<div class="ntNewYear-snow js-ntNewYearSnow"></div>
+			</xf:if>
+		</div>
+	</xf:if>
+</xf:if>

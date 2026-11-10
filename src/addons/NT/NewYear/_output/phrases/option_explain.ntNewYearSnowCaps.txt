@@ -1,0 +1,1 @@
+Snow caps on category blocks, sidebar blocks and the main button. Every block gets its own shape, and the shapes change daily.

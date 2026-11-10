@@ -1,0 +1,9 @@
+{
+    "template": "account_preferences",
+    "description": "Checkbox that turns the decorations off",
+    "execution_order": 10,
+    "enabled": true,
+    "action": "preg_replace",
+    "find": "#(<xf:option name=\"option\\[content_show_signature\\]\".*?/>)(.*?</xf:checkboxrow>)#s",
+    "replace": "$1\n<xf:if is=\"$xf.ntNewYear.active\">\n\t<xf:option name=\"nt_new_year_disabled\" checked=\"{$xf.visitor.Option.nt_new_year_disabled}\"\n\t\tlabel=\"{{ phrase('nt_new_year_turn_off') }}\"\n\t\thint=\"{{ phrase('nt_new_year_turn_off_hint') }}\" />\n</xf:if>$2\n<xf:if is=\"$xf.ntNewYear.active\">\n\t<xf:hiddenval name=\"nt_new_year_shown\">1</xf:hiddenval>\n</xf:if>"
+}

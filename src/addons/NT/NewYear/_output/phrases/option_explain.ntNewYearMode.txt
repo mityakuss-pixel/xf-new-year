@@ -1,0 +1,1 @@
+"By dates" turns the decorations on and off every year by itself.

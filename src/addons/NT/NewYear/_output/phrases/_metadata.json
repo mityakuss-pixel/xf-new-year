@@ -1,0 +1,260 @@
+{
+    "nt_new_year_countdown_days.txt": {
+        "global_cache": false,
+        "version_id": 1000270,
+        "version_string": "1.0.2",
+        "hash": "92ef19752b94b1d19db9b50dd639270e"
+    },
+    "nt_new_year_countdown_label.txt": {
+        "global_cache": false,
+        "version_id": 1000270,
+        "version_string": "1.0.2",
+        "hash": "0873a5bdfb5adde7dd171bc76e43e697"
+    },
+    "nt_new_year_happy_new_year.txt": {
+        "global_cache": false,
+        "version_id": 1000270,
+        "version_string": "1.0.2",
+        "hash": "917d5ff63c23e8379cfed16b3b37f78f"
+    },
+    "nt_new_year_mode_dates.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "0b984ab498be085ce328b7670eb266ba"
+    },
+    "nt_new_year_mode_off.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "6e7b34fa59e1bd229b207892956dc41c"
+    },
+    "nt_new_year_mode_on.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "68eec46437c384d8dad18d5464ebc35c"
+    },
+    "nt_new_year_period_invalid.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "eabd2cc2d4a4f499057d0cac1cd466ba"
+    },
+    "nt_new_year_turn_off.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "782a21ddb297279f153a445f5bf0dd7c"
+    },
+    "nt_new_year_turn_off_hint.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "9f03d4b92b47bfc927b9f4004b9e23e2"
+    },
+    "option.ntNewYearCountdown.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "8ee9c9fd69f69dbfea7b2cc301f7243d"
+    },
+    "option.ntNewYearFrom.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "7f894c273e58c316cdd3e87c3ca9cec0"
+    },
+    "option.ntNewYearHat.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "02e0ea79dec03ff80ea2ac808b5740d3"
+    },
+    "option.ntNewYearMode.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "95e64fdb4801bb4f8982554bc66f8e66"
+    },
+    "option.ntNewYearSnowCaps.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "21c9f772fbee8c6b718e25c5333eb0e4"
+    },
+    "option.ntNewYearSnowCount.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "e65a7c2f8f1138ea73b3a1bc591e3c21"
+    },
+    "option.ntNewYearTo.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "ca64b33e992780cb21dd1e62b5871c0c"
+    },
+    "option_explain.ntNewYearCountdown.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "9dd763b56f83fdab6227f3894af4cf3f"
+    },
+    "option_explain.ntNewYearFrom.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "e862cd1919f10c48bb0afb04d5a3d9a2"
+    },
+    "option_explain.ntNewYearHat.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "option_explain.ntNewYearMode.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "c2715ddb8030bacfd9259bee28f49491"
+    },
+    "option_explain.ntNewYearSnowCaps.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "option_explain.ntNewYearSnowCount.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "a04fd4dc9af98d3c267c83f4b3618ea9"
+    },
+    "option_explain.ntNewYearTo.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "27202fbcd3053a653a370453cc975f7a"
+    },
+    "option_group.ntNewYear.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "bcdb0415bb4490e0ee5ec5181925b7b4"
+    },
+    "option_group_description.ntNewYear.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "88df3435c48a15fa44953eee1cee383e"
+    },
+    "style_prop.ntNewYearCapColor.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "302fcd07d6df7539b54a8a6e6f616e21"
+    },
+    "style_prop.ntNewYearCapOutlineColor.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "ec6c1b5c15c63bedd6a3532ee662342d"
+    },
+    "style_prop.ntNewYearCapShadeColor.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "32fc2aeeac727ebcb6aaef4df801a26c"
+    },
+    "style_prop.ntNewYearCountdown.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "e64465da4a42d65847b321045b155602"
+    },
+    "style_prop.ntNewYearFlakeColor.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "4ed482fe971fad4b437e80a29cc06253"
+    },
+    "style_prop.ntNewYearHatLeft.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "72d478785484e6a756e9202419450a8a"
+    },
+    "style_prop.ntNewYearHatTop.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "ee5f72cae4bcb71bd1b7656ca31d991d"
+    },
+    "style_prop.ntNewYearHatWidth.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "26d06ddb08537c3520149640c934939a"
+    },
+    "style_prop_desc.ntNewYearCapColor.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "style_prop_desc.ntNewYearCapOutlineColor.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "18b36ae1c16182bcb08df26ac2283996"
+    },
+    "style_prop_desc.ntNewYearCapShadeColor.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "d4aed2b89b8c99c2de37b65c156a8e4a"
+    },
+    "style_prop_desc.ntNewYearCountdown.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "style_prop_desc.ntNewYearFlakeColor.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "style_prop_desc.ntNewYearHatLeft.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "style_prop_desc.ntNewYearHatTop.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "style_prop_desc.ntNewYearHatWidth.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "style_prop_group.ntNewYear.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "51f1509afa9d9d3ee5c6788ca072de3f"
+    },
+    "style_prop_group_desc.ntNewYear.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "3bef47895e2108ab5a27629baf75ec56"
+    }
+}

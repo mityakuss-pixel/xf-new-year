@@ -1,0 +1,1 @@
+Text, background and padding of the countdown in the navigation.

@@ -1,0 +1,27 @@
+{
+    "group_name": "ntNewYear",
+    "title": "Countdown",
+    "description": "",
+    "property_type": "css",
+    "css_components": [
+        "text",
+        "background",
+        "border",
+        "border_radius",
+        "padding",
+        "extra"
+    ],
+    "value_type": "",
+    "value_parameters": "",
+    "has_variations": false,
+    "depends_on": "",
+    "value_group": "",
+    "property_value": {
+        "color": "inherit",
+        "font-size": "@xf-fontSizeSmaller",
+        "background-color": "rgba(128, 128, 128, .22)",
+        "border-radius": "999px",
+        "padding": "6px 10px"
+    },
+    "display_order": 50
+}

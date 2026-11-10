@@ -1,0 +1,14 @@
+{
+    "group_name": "ntNewYear",
+    "title": "Hat width",
+    "description": "",
+    "property_type": "value",
+    "css_components": [],
+    "value_type": "unit",
+    "value_parameters": "",
+    "has_variations": false,
+    "depends_on": "",
+    "value_group": "",
+    "property_value": "26px",
+    "display_order": 60
+}

@@ -1,0 +1,17 @@
+{
+    "group_name": "ntNewYear",
+    "title": "Snow cap outline color",
+    "description": "Thin glow around a snow cap. Helps on light backgrounds.",
+    "property_type": "value",
+    "css_components": [],
+    "value_type": "color",
+    "value_parameters": "",
+    "has_variations": true,
+    "depends_on": "",
+    "value_group": "",
+    "property_value": {
+        "default": "rgba(75, 106, 148, .45)",
+        "alternate": "transparent"
+    },
+    "display_order": 40
+}

@@ -1,0 +1,20 @@
+@_ntNewYear-assets: 'styles/nt/new-year';
+
+.p-header-logo--image a
+{
+	position: relative;
+	display: inline-block;
+
+	&::after
+	{
+		content: '';
+		position: absolute;
+		top: @xf-ntNewYearHatTop;
+		left: @xf-ntNewYearHatLeft;
+		width: @xf-ntNewYearHatWidth;
+		aspect-ratio: ~"32 / 28";
+		background: url('@{_ntNewYear-assets}/hat.svg') center / contain no-repeat;
+		transform: rotate(-16deg);
+		pointer-events: none;
+	}
+}

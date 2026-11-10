@@ -1,0 +1,1 @@
+Enter the day and month as DD.MM, for example 15.12.

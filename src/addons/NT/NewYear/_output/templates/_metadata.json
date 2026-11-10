@@ -1,0 +1,22 @@
+{
+    "public/nt_new_year.html": {
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "ce675888e8c4dfab7465e4e7f8219e3e"
+    },
+    "public/nt_new_year.less": {
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "5c7dfddc9032eb360f475b98f01776ce"
+    },
+    "public/nt_new_year_countdown.html": {
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "1fc9498e93582950a2e8bfe3ea9839cb"
+    },
+    "public/nt_new_year_hat.less": {
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "8bf69088674edadd41b42358b754aa14"
+    }
+}

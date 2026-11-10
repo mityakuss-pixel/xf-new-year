@@ -1,0 +1,1 @@
+Negative values move the hat to the left.

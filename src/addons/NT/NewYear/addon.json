@@ -1,0 +1,19 @@
+{
+    "legacy_addon_id": "",
+    "title": "[nt] New Year decorations",
+    "description": "Seasonal snowfall, snow on blocks and a New Year countdown.",
+    "version_id": 1000070,
+    "version_string": "1.0.0",
+    "dev": "NT",
+    "dev_url": "",
+    "faq_url": "",
+    "support_url": "",
+    "extra_urls": [],
+    "require": {
+        "XF": [
+            2030070,
+            "XenForo 2.3.0+"
+        ]
+    },
+    "icon": "fa-snowflake"
+}

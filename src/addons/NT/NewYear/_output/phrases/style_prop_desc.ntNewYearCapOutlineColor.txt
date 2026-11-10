@@ -1,0 +1,1 @@
+Thin glow around a snow cap. Helps on light backgrounds.

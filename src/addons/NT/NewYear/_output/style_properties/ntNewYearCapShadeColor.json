@@ -1,0 +1,17 @@
+{
+    "group_name": "ntNewYear",
+    "title": "Snow cap shade color",
+    "description": "Color at the bottom edge of a snow cap.",
+    "property_type": "value",
+    "css_components": [],
+    "value_type": "color",
+    "value_parameters": "",
+    "has_variations": true,
+    "depends_on": "",
+    "value_group": "",
+    "property_value": {
+        "default": "#cddbeb",
+        "alternate": "#cfdcec"
+    },
+    "display_order": 30
+}
