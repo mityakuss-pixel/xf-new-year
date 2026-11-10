@@ -4,9 +4,9 @@
 {
 	position: fixed;
 	top: 0;
-	right: 0;
 	bottom: 0;
 	left: 0;
+	width: 100vw;
 	z-index: 50;
 	overflow: hidden;
 	pointer-events: none;
@@ -53,6 +53,14 @@
 	{
 		-webkit-mask-image: url('@{_ntNewYear-assets}/flake-2.svg');
 		mask-image: url('@{_ntNewYear-assets}/flake-2.svg');
+	}
+
+	.ntNewYear-snow.is-paused &,
+	.ntNewYear-snow.is-paused & > i,
+	body.is-modalOpen &,
+	body.is-modalOpen & > i
+	{
+		animation-play-state: paused;
 	}
 }
 

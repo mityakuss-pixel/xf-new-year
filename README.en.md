@@ -11,7 +11,7 @@ New Year decorations for XenForo 2.3: snowfall, snow on blocks, a hat on the log
 [![Downloads](https://img.shields.io/github/downloads/mityakuss-pixel/xf-new-year/total?style=flat-square&color=2577b1)](https://github.com/mityakuss-pixel/xf-new-year/releases)
 [![License](https://img.shields.io/github/license/mityakuss-pixel/xf-new-year?style=flat-square&color=2577b1)](LICENSE)
 
-[![Download](https://img.shields.io/badge/Download-1.0.1-2577b1?style=for-the-badge&logo=github)](https://github.com/mityakuss-pixel/xf-new-year/releases/latest)
+[![Download](https://img.shields.io/badge/Download-1.0.2-2577b1?style=for-the-badge&logo=github)](https://github.com/mityakuss-pixel/xf-new-year/releases/latest)
 
 [Русский](README.md) · **English**
 
@@ -36,12 +36,12 @@ Flakes are moved by CSS animations. The script creates them once on page load an
 
 ## Installation
 
-1. Download `NT-NewYear-1.0.1.zip` from the [releases page](https://github.com/mityakuss-pixel/xf-new-year/releases/latest).
+1. Download `NT-NewYear-1.0.2.zip` from the [releases page](https://github.com/mityakuss-pixel/xf-new-year/releases/latest).
 2. In the admin control panel go to "Add-ons → Install/upgrade from archive" and pick the archive.
 
    If that button is missing, unzip the archive, upload the contents of `upload` to the forum root and install the add-on from the "Add-ons" list.
 
-A Russian translation is available as `NT-NewYear-1.0.1-ru.zip` on the same page. Import it via "Appearance → Languages → Import" over your Russian language.
+A Russian translation is available as `NT-NewYear-1.0.2-ru.zip` on the same page. Import it via "Appearance → Languages → Import" over your Russian language.
 
 ## Options
 

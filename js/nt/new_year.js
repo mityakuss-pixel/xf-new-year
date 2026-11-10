@@ -172,22 +172,10 @@
 
 		setSnowRunning (isRunning)
 		{
-			if (!this.snow || !this.snow.getAnimations)
+			if (this.snow)
 			{
-				return
+				this.snow.classList.toggle('is-paused', !isRunning)
 			}
-
-			this.snow.getAnimations({ subtree: true }).forEach(animation =>
-			{
-				if (isRunning)
-				{
-					animation.play()
-				}
-				else
-				{
-					animation.pause()
-				}
-			})
 		},
 
 		getFlakeCount ()
