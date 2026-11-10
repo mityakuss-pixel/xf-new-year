@@ -14,12 +14,10 @@ class AccountController extends XFCP_AccountController
 
 		if ($this->request->exists('nt_new_year_shown'))
 		{
-			$disabled = $this->filter('nt_new_year_disabled', 'bool');
-
-			$form->setup(function () use ($visitor, $disabled)
-			{
-				$visitor->Option->nt_new_year_disabled = $disabled;
-			});
+			$form->setupEntityInput(
+				$visitor->getRelationOrDefault('Option'),
+				$this->filter(['nt_new_year_disabled' => 'bool'])
+			);
 		}
 
 		return $form;

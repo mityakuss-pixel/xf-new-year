@@ -2,6 +2,8 @@
 {
 	'use strict'
 
+	const NT = window.NT = window.NT || {}
+
 	const SVG_NS = 'http://www.w3.org/2000/svg'
 
 	const FLAKES = {
@@ -113,7 +115,7 @@
 		return { svg, lip }
 	}
 
-	XF.NtNewYear = XF.Element.newHandler({
+	NT.NewYear = XF.Element.newHandler({
 		options: {
 			snowCount: 60,
 			caps: false,
@@ -380,7 +382,7 @@
 		},
 	})
 
-	XF.NtNewYearCountdown = XF.Element.newHandler({
+	NT.NewYearCountdown = XF.Element.newHandler({
 		options: {},
 
 		days: null,
@@ -447,6 +449,6 @@
 		},
 	})
 
-	XF.Element.register('nt-new-year', 'XF.NtNewYear')
-	XF.Element.register('nt-new-year-countdown', 'XF.NtNewYearCountdown')
+	XF.Element.register('nt-new-year', 'NT.NewYear')
+	XF.Element.register('nt-new-year-countdown', 'NT.NewYearCountdown')
 })(window, document)
