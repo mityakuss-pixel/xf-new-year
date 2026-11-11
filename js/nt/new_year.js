@@ -12,6 +12,11 @@
 		near: { share: 0.15, size: [11, 17], opacity: [0.3, 0.6], duration: [9, 14], drift: 20, sway: [14, 30] },
 	}
 
+	const FLAKE_PATHS = [
+		'M12 12L12 2.5M9.79 4.08L12 5.8L14.21 4.08M12 12L20.23 7.25M17.76 6.13L17.37 8.9L19.97 9.95M12 12L20.23 16.75M19.97 14.05L17.37 15.1L17.76 17.87M12 12L12 21.5M14.21 19.92L12 18.2L9.79 19.92M12 12L3.77 16.75M6.24 17.87L6.63 15.1L4.03 14.05M12 12L3.77 7.25M4.03 9.95L6.63 8.9L6.24 6.13',
+		'M12 7.8L15.64 9.9M12 7.8L12 2.5M15.64 9.9L15.64 14.1M15.64 9.9L20.23 7.25M15.64 14.1L12 16.2M15.64 14.1L20.23 16.75M12 16.2L8.36 14.1M12 16.2L12 21.5M8.36 14.1L8.36 9.9M8.36 14.1L3.77 16.75M8.36 9.9L12 7.8M8.36 9.9L3.77 7.25',
+	]
+
 	const CAP_PROFILES = [
 		t => Math.pow(Math.sin(Math.PI * Math.pow(t, 0.6)), 1.4),
 		t => Math.pow(Math.sin(Math.PI * Math.pow(t, 1.7)), 1.4),
@@ -25,6 +30,18 @@
 	const between = (min, max, random = Math.random) => min + random() * (max - min)
 
 	const pad = value => String(value).padStart(2, '0')
+
+	const whenIdle = callback =>
+	{
+		if (window.requestIdleCallback)
+		{
+			window.requestIdleCallback(callback, { timeout: 1500 })
+		}
+		else
+		{
+			window.setTimeout(callback, 200)
+		}
+	}
 
 	const createRandom = seed =>
 	{
@@ -135,12 +152,16 @@
 			this.reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)')
 			this.capped = new Map()
 
-			this.buildSnow()
-			this.initCaps()
+			whenIdle(() =>
+			{
+				this.setSnowRunning(!document.hidden)
+				this.buildSnow()
+				this.initCaps()
 
-			XF.on(this.reducedMotion, 'change', this.buildSnow.bind(this))
-			XF.on(window, 'resize', this.onResize.bind(this), { passive: true })
-			XF.on(document, 'visibilitychange', this.onVisibilityChange.bind(this))
+				XF.on(this.reducedMotion, 'change', this.buildSnow.bind(this))
+				XF.on(window, 'resize', this.onResize.bind(this), { passive: true })
+				XF.on(document, 'visibilitychange', this.onVisibilityChange.bind(this))
+			})
 		},
 
 		onResize ()
@@ -228,10 +249,6 @@
 			const set = (name, value) => flake.style.setProperty('--nt-new-year-' + name, value)
 
 			flake.className = 'ntNewYear-flake ntNewYear-flake--' + kind
-			if (kind === 'near' && Math.random() < 0.5)
-			{
-				flake.classList.add('ntNewYear-flake--alt')
-			}
 
 			set('x', between(0, 100).toFixed(2) + '%')
 			set('size', between(...settings.size).toFixed(1) + 'px')
@@ -247,9 +264,16 @@
 				set('sway', between(...settings.sway).toFixed(0) + 'px')
 				set('sway-duration', swayDuration.toFixed(1) + 's')
 				set('sway-delay', (-between(0, swayDuration)).toFixed(1) + 's')
-			}
 
-			flake.append(document.createElement('i'))
+				const inner = document.createElement('i')
+				if (kind === 'near')
+				{
+					const shape = createSvg('svg', { viewBox: '0 0 24 24', focusable: 'false' })
+					shape.append(createSvg('path', { d: FLAKE_PATHS[Math.random() < 0.5 ? 0 : 1] }))
+					inner.append(shape)
+				}
+				flake.append(inner)
+			}
 
 			return flake
 		},
@@ -376,6 +400,7 @@
 		days: null,
 		clock: null,
 		timer: null,
+		isDone: false,
 
 		init ()
 		{
@@ -384,22 +409,32 @@
 
 			this.update()
 			this.target.hidden = false
-
-			this.timer = window.setInterval(() =>
-			{
-				if (!document.hidden)
-				{
-					this.update()
-				}
-			}, 1000)
+			this.schedule()
 
 			XF.on(document, 'visibilitychange', () =>
 			{
 				if (!document.hidden)
 				{
 					this.update()
+					this.schedule()
 				}
 			})
+		},
+
+		schedule ()
+		{
+			window.clearTimeout(this.timer)
+
+			if (this.isDone || document.hidden)
+			{
+				return
+			}
+
+			this.timer = window.setTimeout(() =>
+			{
+				this.update()
+				this.schedule()
+			}, 1000 - Date.now() % 1000 + 15)
 		},
 
 		update ()
@@ -413,7 +448,7 @@
 			{
 				this.setText(this.days, this.target.dataset.done)
 				this.setText(this.clock, '')
-				window.clearInterval(this.timer)
+				this.isDone = true
 				return
 			}
 

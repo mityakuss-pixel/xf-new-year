@@ -11,7 +11,7 @@
 [![Downloads](https://img.shields.io/github/downloads/mityakuss-pixel/xf-new-year/total?style=flat-square&label=%D0%A1%D0%BA%D0%B0%D1%87%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F&color=2577b1)](https://github.com/mityakuss-pixel/xf-new-year/releases)
 [![License](https://img.shields.io/github/license/mityakuss-pixel/xf-new-year?style=flat-square&label=%D0%9B%D0%B8%D1%86%D0%B5%D0%BD%D0%B7%D0%B8%D1%8F&color=2577b1)](LICENSE)
 
-[![Скачать](https://img.shields.io/badge/%D0%A1%D0%BA%D0%B0%D1%87%D0%B0%D1%82%D1%8C-1.0.2-2577b1?style=for-the-badge&logo=github)](https://github.com/mityakuss-pixel/xf-new-year/releases/latest)
+[![Скачать](https://img.shields.io/badge/%D0%A1%D0%BA%D0%B0%D1%87%D0%B0%D1%82%D1%8C-1.0.3-2577b1?style=for-the-badge&logo=github)](https://github.com/mityakuss-pixel/xf-new-year/releases/latest)
 [![Русский перевод](https://img.shields.io/badge/%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4-ru--RU-d81f3c?style=for-the-badge)](https://github.com/mityakuss-pixel/xf-new-year/releases/latest)
 
 **Русский** · [English](README.en.md)
@@ -37,14 +37,14 @@
 
 ## Установка
 
-1. Скачайте `NT-NewYear-1.0.2.zip` со [страницы релизов](https://github.com/mityakuss-pixel/xf-new-year/releases/latest).
+1. Скачайте `NT-NewYear-1.0.3.zip` со [страницы релизов](https://github.com/mityakuss-pixel/xf-new-year/releases/latest).
 2. В админке откройте «Дополнения → Установить/обновить из архива» и выберите архив.
 
    Если этой кнопки нет, распакуйте архив, загрузите содержимое папки `upload` в корень форума и установите дополнение из списка в «Дополнениях».
 
 ### Русский перевод
 
-Аддон по умолчанию на английском. Перевод лежит в `NT-NewYear-1.0.2-ru.zip` на той же странице релизов.
+Аддон по умолчанию на английском. Перевод лежит в `NT-NewYear-1.0.3-ru.zip` на той же странице релизов.
 
 1. Распакуйте архив, внутри файл `language-ru-NT-NewYear.xml`.
 2. «Внешний вид → Языки → Импорт», выберите файл и отметьте перезапись вашего русского языка.
@@ -85,7 +85,7 @@
 ```
 src/addons/NT/NewYear/   код и _output
 js/nt/new_year.js        снег, сугробы и отсчёт
-styles/nt/new-year/      снежинки и шапка в SVG
+styles/nt/new-year/      шапка в SVG
 ```
 
 Скопируйте файлы в форум с включённым режимом разработки, установите аддон и импортируйте `_output`:

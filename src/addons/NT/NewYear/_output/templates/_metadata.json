@@ -1,13 +1,13 @@
 {
     "public/nt_new_year.html": {
-        "version_id": 1000070,
-        "version_string": "1.0.0",
+        "version_id": 1000270,
+        "version_string": "1.0.2",
         "hash": "ce675888e8c4dfab7465e4e7f8219e3e"
     },
     "public/nt_new_year.less": {
-        "version_id": 1000170,
-        "version_string": "1.0.1",
-        "hash": "de76bb2e05a4a26d9468ce682e851c66"
+        "version_id": 1000370,
+        "version_string": "1.0.3",
+        "hash": "6d4b4671e245994dc1adff306143a4f6"
     },
     "public/nt_new_year_countdown.html": {
         "version_id": 1000070,

@@ -1,5 +1,3 @@
-@_ntNewYear-assets: 'styles/nt/new-year';
-
 .ntNewYear-snow
 {
 	position: fixed;
@@ -21,22 +19,22 @@
 	left: var(--nt-new-year-x);
 	width: var(--nt-new-year-size);
 	height: var(--nt-new-year-size);
-	opacity: var(--nt-new-year-opacity);
 	animation: ntNewYear-fall var(--nt-new-year-duration) linear var(--nt-new-year-delay) infinite;
 	will-change: transform;
+
+	&--far,
+	> i
+	{
+		border-radius: 50%;
+		background: currentColor;
+		opacity: var(--nt-new-year-opacity);
+	}
 
 	> i
 	{
 		display: block;
 		width: 100%;
 		height: 100%;
-		border-radius: 50%;
-		background: currentColor;
-	}
-
-	&--mid > i,
-	&--near > i
-	{
 		animation: ntNewYear-sway var(--nt-new-year-sway-duration) ease-in-out var(--nt-new-year-sway-delay) infinite alternate;
 		will-change: transform;
 	}
@@ -44,15 +42,20 @@
 	&--near > i
 	{
 		border-radius: 0;
-		-webkit-mask: url('@{_ntNewYear-assets}/flake-1.svg') center / contain no-repeat;
-		mask: url('@{_ntNewYear-assets}/flake-1.svg') center / contain no-repeat;
+		background: none;
 		animation-name: ntNewYear-swayTurn;
 	}
 
-	&--alt > i
+	svg
 	{
-		-webkit-mask-image: url('@{_ntNewYear-assets}/flake-2.svg');
-		mask-image: url('@{_ntNewYear-assets}/flake-2.svg');
+		display: block;
+		width: 100%;
+		height: 100%;
+		fill: none;
+		stroke: currentColor;
+		stroke-width: 1.8;
+		stroke-linecap: round;
+		stroke-linejoin: round;
 	}
 
 	.ntNewYear-snow.is-paused &,
@@ -61,6 +64,12 @@
 	body.is-modalOpen & > i
 	{
 		animation-play-state: paused;
+	}
+
+	body.is-modalOpen:not(:has(.overlay-container.is-active)):has(.overlay-container.is-transitioning) &,
+	body.is-modalOpen:not(:has(.overlay-container.is-active)):has(.overlay-container.is-transitioning) & > i
+	{
+		animation-play-state: running;
 	}
 }
 
@@ -126,6 +135,7 @@
 	line-height: 1;
 	white-space: nowrap;
 	font-variant-numeric: tabular-nums;
+	contain: content;
 	.xf-ntNewYearCountdown();
 }
 

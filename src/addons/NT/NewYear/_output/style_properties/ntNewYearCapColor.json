@@ -10,8 +10,7 @@
     "depends_on": "",
     "value_group": "",
     "property_value": {
-        "default": "#ffffff",
-        "alternate": "#ffffff"
+        "default": "#ffffff"
     },
     "display_order": 20
 }
