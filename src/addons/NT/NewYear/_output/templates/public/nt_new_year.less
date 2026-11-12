@@ -66,8 +66,8 @@
 		animation-play-state: paused;
 	}
 
-	body.is-modalOpen:not(:has(.overlay-container.is-active)):has(.overlay-container.is-transitioning) &,
-	body.is-modalOpen:not(:has(.overlay-container.is-active)):has(.overlay-container.is-transitioning) & > i
+	body.is-modalOpen .ntNewYear:not(:has(~ .overlay-container.is-active)):has(~ .overlay-container.is-transitioning) &,
+	body.is-modalOpen .ntNewYear:not(:has(~ .overlay-container.is-active)):has(~ .overlay-container.is-transitioning) & > i
 	{
 		animation-play-state: running;
 	}

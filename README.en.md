@@ -7,11 +7,9 @@
 New Year decorations for XenForo 2.3: snowfall, snow on blocks, a hat on the logo and a countdown to the New Year.
 
 [![XenForo](https://img.shields.io/badge/XenForo-2.3%2B-2577b1?style=flat-square)](https://xenforo.com)
-[![Release](https://img.shields.io/github/v/release/mityakuss-pixel/xf-new-year?style=flat-square&color=2577b1)](https://github.com/mityakuss-pixel/xf-new-year/releases/latest)
-[![Downloads](https://img.shields.io/github/downloads/mityakuss-pixel/xf-new-year/total?style=flat-square&color=2577b1)](https://github.com/mityakuss-pixel/xf-new-year/releases)
-[![License](https://img.shields.io/github/license/mityakuss-pixel/xf-new-year?style=flat-square&color=2577b1)](LICENSE)
-
-[![Download](https://img.shields.io/badge/Download-1.0.3-2577b1?style=for-the-badge&logo=github)](https://github.com/mityakuss-pixel/xf-new-year/releases/latest)
+[![Release](https://img.shields.io/github/v/release/mityakuss-pixel/nt-new-year?style=flat-square&label=Release&color=2577b1)](https://github.com/mityakuss-pixel/nt-new-year/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/mityakuss-pixel/nt-new-year/total?style=flat-square&label=Downloads&color=2577b1)](https://github.com/mityakuss-pixel/nt-new-year/releases)
+[![License](https://img.shields.io/github/license/mityakuss-pixel/nt-new-year?style=flat-square&label=License&color=2577b1)](LICENSE)
 
 [Русский](README.md) · **English**
 
@@ -34,18 +32,28 @@ Flakes are moved by CSS animations. The script creates them once on page load an
 - No snow at all with "reduce motion" enabled in the OS or data saver enabled in the browser.
 - No external requests and no third-party libraries.
 
+## Requirements
+
+- XenForo 2.3.0 or later.
+
 ## Installation
 
-1. Download `NT-NewYear-1.0.3.zip` from the [releases page](https://github.com/mityakuss-pixel/xf-new-year/releases/latest).
-2. In the admin control panel go to "Add-ons → Install/upgrade from archive" and pick the archive.
+1. Download `NT-NewYear-1.0.4.zip` from the [releases page](https://github.com/mityakuss-pixel/nt-new-year/releases/latest).
+2. In the admin control panel open **Add-ons → Install/upgrade from archive** and choose the archive.
 
-   If that button is missing, unzip the archive, upload the contents of `upload` to the forum root and install the add-on from the "Add-ons" list.
+If there is no install from archive button, unpack the archive, upload the contents of the `upload` folder to the forum root and install the add-on from the **Add-ons** list. The same from the command line:
 
-A Russian translation is available as `NT-NewYear-1.0.3-ru.zip` on the same page. Import it via "Appearance → Languages → Import" over your Russian language.
+```bash
+php cmd.php xf-addon:install NT/NewYear
+```
+
+Upgrades from earlier versions use the same archive.
+
+A Russian translation is available as `NT-NewYear-1.0.4-ru.zip` on the same page. Import it via **Appearance → Languages → Import language** over your Russian language.
 
 ## Options
 
-"Setup → Options → [nt] New Year decorations":
+**Setup → Options → [nt] New Year decorations**:
 
 | Option | Default |
 |---|---|
@@ -60,17 +68,17 @@ Besides "by dates" there are "always" and "never". Dates follow the guest time z
 
 ## Style properties
 
-Everything visual lives in style properties, group "[nt] New Year decorations":
+**Appearance → Style properties → [nt] New Year decorations**:
 
 - flake, snow cap, cap shade and cap outline colors, each with a light and a dark variation;
 - countdown look: background, border radius, padding, font size;
 - hat width and its offset from the logo.
 
-No core templates are edited: the markup is added by three template modifications, the styles live in `nt_new_year.less` and `nt_new_year_hat.less`.
+The add-on does not edit core templates. The markup is added by three template modifications, the styles are in `nt_new_year.less` and `nt_new_year_hat.less`.
 
-## Uninstalling
+## Uninstall
 
-Uninstall it from "Add-ons" as usual. Options, phrases, templates and the `nt_new_year_disabled` column in `xf_user_option` are removed with it.
+Uninstall it as usual from **Add-ons**. Its options, phrases, templates and the `nt_new_year_disabled` column in `xf_user_option` are removed with it.
 
 ## Development
 
@@ -89,7 +97,7 @@ php cmd.php xf-addon:install NT/NewYear
 php cmd.php xf-dev:import --addon=NT/NewYear
 ```
 
-Building the archive:
+Build a release:
 
 ```bash
 php cmd.php xf-addon:build-release NT/NewYear
