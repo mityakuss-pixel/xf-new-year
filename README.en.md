@@ -32,7 +32,7 @@ XenForo 2.3.0 or later.
 1. Download `NT-NewYear-1.0.4.zip` from the [releases page](https://github.com/mityakuss-pixel/nt-new-year/releases/latest).
 2. In the admin control panel open **Add-ons → Install/upgrade from archive** and choose the archive.
 
-A Russian translation is available as `NT-NewYear-1.0.4-ru.zip`. Unpack it and import the file via **Appearance → Languages → Import language** over your Russian language.
+A Russian translation is available as `language-Russian-(RU)-NT-NewYear.zip`. Unpack it and import the file via **Appearance → Languages → Import language** over your Russian language.
 
 ## Configuration
 
